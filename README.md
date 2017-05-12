@@ -1,5 +1,5 @@
-AWESOME ADMIN
-=============
+AWESOME ADMIN [development]
+===========================
 
 一个针对 django admin  UI及功能的改进版本
 
@@ -34,7 +34,23 @@ STATICFILES_DIRS = (
 基于内部项目开发的同学，请确保代码仓库路径与 `settings.py` 中声明路径一致
 
 
+### 开源 js 引用
 
+在商业模板中，存在大量的开源模块，对于此类型模块。
+
+要求必须使用
+
+```
+npm i 模块名 --save-dev
+```
+
+存储在 package.json 中
+
+此外还应该更新对应项目的 `STATICFILES_DIRS`。以 jquery 为例：
+
+STATICFILES_DIRS = (
+    os.path.expanduser('<AWESOME-ADMIN-LOCAL-PATH>/node_modules/jquery'),
+)
 
 
 

@@ -1,0 +1,16 @@
+{
+  "name": "awesome-admin-resources",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "watch-html": "pug -E html -b ./ -w ./",
+    "release-weapp": "pug -E wxml -b ./ ./"
+  },
+  "author": "wangwenpei",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery-form": "^4.2.1"
+  }
+}
