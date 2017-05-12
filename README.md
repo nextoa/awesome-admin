@@ -47,10 +47,11 @@ npm i 模块名 --save-dev
 存储在 package.json 中
 
 此外还应该更新对应项目的 `STATICFILES_DIRS`。以 jquery 为例：
-
-STATICFILES_DIRS = (
+```
+STATICFILES_DIRS += (
     os.path.expanduser('<AWESOME-ADMIN-LOCAL-PATH>/node_modules/jquery'),
 )
+```
 
 
 
